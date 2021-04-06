@@ -15,8 +15,8 @@ class AlpacaClient:
     def get_account_info(self):
         account = self._api.get_account()
         print(
-            f'The buying power is {acc.buying_power} {acc.currency} '
-            f'and the equity is {acc.equity} {acc.currency}\n'
+            f'The buying power is {account.buying_power} {account.currency} '
+            f'and the equity is {account.equity} {account.currency}\n'
             f'The account status is {account.status}'
         )
 
